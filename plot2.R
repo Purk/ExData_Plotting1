@@ -8,4 +8,4 @@ houseData <- subset(houseData, select=-c(Time)); #remove 'Time' variable
 houseData$Date_Time <- strptime(houseData$Date_Time, "%d/%m/%Y %H:%M:%S");
 
 #recreate plot 1 histogram for assignment
-plot(houseData$Date_Time, as.numeric(houseData$Global_active_power),type="l")
+plot(houseData$Date_Time, as.numeric(houseData$Global_active_power),xlab='',ylab="Global Active Power (kilowatts)",type="l")
